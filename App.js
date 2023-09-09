@@ -64,7 +64,7 @@ function App() {
 
   // move bird to down
   useEffect(() => {
-    if(!isGameOver){
+    // if(!isGameOver){
       if (birdBottom >= 60) {
         birdBottomInterval = setInterval(() => {
           setBirdBottom(birdBottom => birdBottom - 20);
@@ -72,10 +72,12 @@ function App() {
       } else {
         gameOver();
       }
-    }
+    // }
     return () => clearInterval(birdBottomInterval);
   }, [birdBottom, isGameOver]);
 
+  // move ground
+  
   useEffect(() => {
     if(!isGameOver){
       if(groundLeft<width){
@@ -134,32 +136,32 @@ function App() {
   // game over when touches pipes
   useEffect(()=>{
     // bottom green obstacle condition
-    // if((birdBottom < (obstacleHeight-obstacleOneNegativeHeight) && (birdLeft+birdWidth === obstacleLeftDistance))||
-    // birdBottom < (obstacleHeight-obstacleOneNegativeHeight) && (obstacleLeftDistance < birdLeft+birdWidth && obstacleLeftDistance>birdLeft)
-    // ){
-    //   gameOver()
-    // }
+    if((birdBottom < (obstacleHeight-obstacleOneNegativeHeight) && (birdLeft+birdWidth === obstacleLeftDistance))||
+    birdBottom < (obstacleHeight-obstacleOneNegativeHeight) && (obstacleLeftDistance < birdLeft+birdWidth && obstacleLeftDistance>birdLeft)
+    ){
+      gameOver()
+    }
 
-    // // top green obstacle condition
-    // if((birdBottom > (height-(obstacleHeight-obstacleOneNegativeHeight)) && (birdLeft+birdWidth === obstacleLeftDistance)) ||
-    // birdBottom > (height-(obstacleHeight-obstacleOneNegativeHeight)) && (obstacleLeftDistance < birdLeft+birdWidth && obstacleLeftDistance>birdLeft)
-    // ){
-    //   gameOver()
-    // }
+    // top green obstacle condition
+    if((birdBottom > (height-(obstacleHeight-obstacleOneNegativeHeight)) && (birdLeft+birdWidth === obstacleLeftDistance)) ||
+    birdBottom > (height-(obstacleHeight-obstacleOneNegativeHeight)) && (obstacleLeftDistance < birdLeft+birdWidth && obstacleLeftDistance>birdLeft)
+    ){
+      gameOver()
+    }
 
-    // // // bottom red obstacle condition
-    // if((birdBottom < (obstacleHeight-obstacleTwoNegativeHeight) && (birdLeft+birdWidth === obstacleTwoLeftDistance))||
-    // birdBottom < (obstacleHeight-obstacleTwoNegativeHeight) && (obstacleTwoLeftDistance < birdLeft+birdWidth && obstacleTwoLeftDistance>birdLeft)
-    // ){
-    //   gameOver()
-    // }
+    // // bottom red obstacle condition
+    if((birdBottom < (obstacleHeight-obstacleTwoNegativeHeight) && (birdLeft+birdWidth === obstacleTwoLeftDistance))||
+    birdBottom < (obstacleHeight-obstacleTwoNegativeHeight) && (obstacleTwoLeftDistance < birdLeft+birdWidth && obstacleTwoLeftDistance>birdLeft)
+    ){
+      gameOver()
+    }
 
-    // // top red obstacle condition
-    // if((birdBottom > (height-(obstacleHeight-obstacleTwoNegativeHeight)) && (birdLeft+birdWidth === obstacleTwoLeftDistance)) ||
-    // birdBottom > (height-(obstacleHeight-obstacleTwoNegativeHeight)) && (obstacleTwoLeftDistance < birdLeft+birdWidth && obstacleTwoLeftDistance>birdLeft)
-    // ){
-    //   gameOver()
-    // }
+    // top red obstacle condition
+    if((birdBottom > (height-(obstacleHeight-obstacleTwoNegativeHeight)) && (birdLeft+birdWidth === obstacleTwoLeftDistance)) ||
+    birdBottom > (height-(obstacleHeight-obstacleTwoNegativeHeight)) && (obstacleTwoLeftDistance < birdLeft+birdWidth && obstacleTwoLeftDistance>birdLeft)
+    ){
+      gameOver()
+    }
 
   },[birdBottom,obstacleLeftDistance, obstacleTwoLeftDistance])
 
