@@ -5,8 +5,7 @@ import {
   TouchableWithoutFeedback,
   Image,
   ImageBackground,
-  Pressable,
-  InputAccessoryView,
+  Pressable
 } from 'react-native';
 import Bird from '@app/components/Bird/Bird';
 import GameOver from '@app/components/GameOver/GameOver';
@@ -77,7 +76,7 @@ function App() {
   }, [birdBottom, isGameOver]);
 
   // move ground
-  
+
   useEffect(() => {
     if(!isGameOver){
       if(groundLeft<width){
@@ -134,22 +133,24 @@ function App() {
   },[obstacleTwoLeftDistance, score])
 
   // game over when touches pipes
+
   useEffect(()=>{
+
     // bottom green obstacle condition
     if((birdBottom < (obstacleHeight-obstacleOneNegativeHeight) && (birdLeft+birdWidth === obstacleLeftDistance))||
     birdBottom < (obstacleHeight-obstacleOneNegativeHeight) && (obstacleLeftDistance < birdLeft+birdWidth && obstacleLeftDistance>birdLeft)
     ){
       gameOver()
     }
-
-    // top green obstacle condition
-    if((birdBottom > (height-(obstacleHeight-obstacleOneNegativeHeight)) && (birdLeft+birdWidth === obstacleLeftDistance)) ||
-    birdBottom > (height-(obstacleHeight-obstacleOneNegativeHeight)) && (obstacleLeftDistance < birdLeft+birdWidth && obstacleLeftDistance>birdLeft)
+   
+    // // top green obstacle condition
+    if((birdBottom > (height-(obstacleHeight-obstacleOneNegativeHeight)) && (birdLeft+birdWidth === obstacleLeftDistance)) 
+    || birdBottom > (height-(obstacleHeight-obstacleOneNegativeHeight)) && (obstacleLeftDistance <= birdLeft+birdWidth && obstacleLeftDistance>=birdLeft)
     ){
       gameOver()
     }
 
-    // // bottom red obstacle condition
+    // bottom red obstacle condition
     if((birdBottom < (obstacleHeight-obstacleTwoNegativeHeight) && (birdLeft+birdWidth === obstacleTwoLeftDistance))||
     birdBottom < (obstacleHeight-obstacleTwoNegativeHeight) && (obstacleTwoLeftDistance < birdLeft+birdWidth && obstacleTwoLeftDistance>birdLeft)
     ){
@@ -163,7 +164,8 @@ function App() {
       gameOver()
     }
 
-  },[birdBottom,obstacleLeftDistance, obstacleTwoLeftDistance])
+  },[birdBottom,obstacleLeftDistance, obstacleTwoLeftDistance, birdLeft])
+
 
   const flyBird = () => {
     if (!isGameOver && birdBottom < height - 50) {
@@ -214,7 +216,7 @@ function App() {
           
           <Ground groundLeft={groundLeft} groundHeight={groundHeight} />
 
-          {isGameOver ? <GameOver score={score} /> : null}
+          {isGameOver ? <GameOver score={score+1} /> : null}
 
           {isGameOver ? 
             <View style={{
