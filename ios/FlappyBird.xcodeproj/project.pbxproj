@@ -14,6 +14,16 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-FlappyBird-FlappyBirdTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-FlappyBird-FlappyBirdTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		E2EE9A882AAD00F3007BD89E /* swoosh.ogg in Resources */ = {isa = PBXBuildFile; fileRef = E2EE9A7E2AAD00F2007BD89E /* swoosh.ogg */; };
+		E2EE9A892AAD00F3007BD89E /* die.ogg in Resources */ = {isa = PBXBuildFile; fileRef = E2EE9A7F2AAD00F2007BD89E /* die.ogg */; };
+		E2EE9A8A2AAD00F3007BD89E /* point.ogg in Resources */ = {isa = PBXBuildFile; fileRef = E2EE9A802AAD00F2007BD89E /* point.ogg */; };
+		E2EE9A8B2AAD00F3007BD89E /* hit.ogg in Resources */ = {isa = PBXBuildFile; fileRef = E2EE9A812AAD00F2007BD89E /* hit.ogg */; };
+		E2EE9A8C2AAD00F3007BD89E /* hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2EE9A822AAD00F2007BD89E /* hit.wav */; };
+		E2EE9A8D2AAD00F3007BD89E /* swoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2EE9A832AAD00F2007BD89E /* swoosh.wav */; };
+		E2EE9A8E2AAD00F3007BD89E /* wing.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2EE9A842AAD00F2007BD89E /* wing.wav */; };
+		E2EE9A8F2AAD00F3007BD89E /* die.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2EE9A852AAD00F2007BD89E /* die.wav */; };
+		E2EE9A902AAD00F3007BD89E /* wing.ogg in Resources */ = {isa = PBXBuildFile; fileRef = E2EE9A862AAD00F3007BD89E /* wing.ogg */; };
+		E2EE9A912AAD00F3007BD89E /* point.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2EE9A872AAD00F3007BD89E /* point.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +53,16 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-FlappyBird.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlappyBird.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = FlappyBird/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-FlappyBird-FlappyBirdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlappyBird-FlappyBirdTests.release.xcconfig"; path = "Target Support Files/Pods-FlappyBird-FlappyBirdTests/Pods-FlappyBird-FlappyBirdTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2EE9A7E2AAD00F2007BD89E /* swoosh.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = swoosh.ogg; sourceTree = "<group>"; };
+		E2EE9A7F2AAD00F2007BD89E /* die.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = die.ogg; sourceTree = "<group>"; };
+		E2EE9A802AAD00F2007BD89E /* point.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = point.ogg; sourceTree = "<group>"; };
+		E2EE9A812AAD00F2007BD89E /* hit.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = hit.ogg; sourceTree = "<group>"; };
+		E2EE9A822AAD00F2007BD89E /* hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hit.wav; sourceTree = "<group>"; };
+		E2EE9A832AAD00F2007BD89E /* swoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swoosh.wav; sourceTree = "<group>"; };
+		E2EE9A842AAD00F2007BD89E /* wing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wing.wav; sourceTree = "<group>"; };
+		E2EE9A852AAD00F2007BD89E /* die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = die.wav; sourceTree = "<group>"; };
+		E2EE9A862AAD00F3007BD89E /* wing.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = wing.ogg; sourceTree = "<group>"; };
+		E2EE9A872AAD00F3007BD89E /* point.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = point.wav; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -116,6 +136,16 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				E2EE9A7F2AAD00F2007BD89E /* die.ogg */,
+				E2EE9A852AAD00F2007BD89E /* die.wav */,
+				E2EE9A812AAD00F2007BD89E /* hit.ogg */,
+				E2EE9A822AAD00F2007BD89E /* hit.wav */,
+				E2EE9A802AAD00F2007BD89E /* point.ogg */,
+				E2EE9A872AAD00F3007BD89E /* point.wav */,
+				E2EE9A7E2AAD00F2007BD89E /* swoosh.ogg */,
+				E2EE9A832AAD00F2007BD89E /* swoosh.wav */,
+				E2EE9A862AAD00F3007BD89E /* wing.ogg */,
+				E2EE9A842AAD00F2007BD89E /* wing.wav */,
 				13B07FAE1A68108700A75B9A /* FlappyBird */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* FlappyBirdTests */,
@@ -242,8 +272,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EE9A892AAD00F3007BD89E /* die.ogg in Resources */,
+				E2EE9A8D2AAD00F3007BD89E /* swoosh.wav in Resources */,
+				E2EE9A882AAD00F3007BD89E /* swoosh.ogg in Resources */,
+				E2EE9A8F2AAD00F3007BD89E /* die.wav in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				E2EE9A8B2AAD00F3007BD89E /* hit.ogg in Resources */,
+				E2EE9A8A2AAD00F3007BD89E /* point.ogg in Resources */,
+				E2EE9A8E2AAD00F3007BD89E /* wing.wav in Resources */,
+				E2EE9A8C2AAD00F3007BD89E /* hit.wav in Resources */,
+				E2EE9A902AAD00F3007BD89E /* wing.ogg in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E2EE9A912AAD00F3007BD89E /* point.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
